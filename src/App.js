@@ -8,7 +8,7 @@ import reducer from './reducer'
 
 const store = createStore(reducer, applyMiddleware(thunk))
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
       <Provider store={store}>

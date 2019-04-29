@@ -37,21 +37,19 @@ const Row = styled.div`
     margin-bottom: 10px;
   }
 `
-
-const PlusButton = styled(FaPlus)`
-  cursor: pointer;
-`
-
 const CountDisplay = styled.div`
   display: inline-block;
   margin-left: 10px;
   user-select: none;
 `
 
-export class Home extends Component {
+class Home extends Component {
   static propTypes = {
     count: PropTypes.number,
     text: PropTypes.string,
+    derived: PropTypes.string,
+    incrementCount: PropTypes.func,
+    setText: PropTypes.func,
   }
   submit = () => {
     const { setText } = this.props
@@ -73,11 +71,17 @@ export class Home extends Component {
             >
               <FaPlus />
             </Button>
-            <CountDisplay>Count: {count}</CountDisplay>
+            <CountDisplay>
+              Count:
+              {count}
+            </CountDisplay>
           </Row>
         </Section>
         <Section>
-          <Row>Text Value: {text}</Row>
+          <Row>
+            Text Value:
+            {text}
+          </Row>
           <Row>
             <Input inputRef={el => (this.text = el)} />
             <Button variant="contained" color="primary" onClick={this.submit}>
