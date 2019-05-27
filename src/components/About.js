@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 10px 20px;
 `
 
-export const About = () => (
+const About = () => (
   <Container>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et

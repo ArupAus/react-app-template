@@ -13,7 +13,7 @@ const AnimatedExample = styled.div`
   font-size: ${props => `${props.motion}px` || '14px'};
 `
 
-export const Animated = () => (
+const Animated = () => (
   <Container>
     <Motion defaultStyle={{ x: 14 }} style={{ x: spring(34) }}>
       {style => (

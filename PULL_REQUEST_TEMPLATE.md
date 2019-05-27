@@ -5,6 +5,7 @@ Description of the changes/additions
 
 ## Pre-merge checklist:
 
+- [ ] Remember to run eslint checks `npm run lint`
 - [ ] Replace default issue link text and reference the issue in the PR title
 - [ ] Write short description of fix underneath link
 - [ ] Edit or create a CHANGLOG.txt (in accordance with [this](https://keepachangelog.com/en/1.0.0/))

@@ -1,11 +1,8 @@
 import path from 'path'
-import webpack from 'webpack'
 import HTMLWebpackPlugin from 'html-webpack-plugin'
 import HTMLWebpackTemplate from 'html-webpack-template'
-import Copy from 'copy-webpack-plugin'
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
-export default env => {
+export default () => {
   const plugins = []
   plugins.push(
     new HTMLWebpackPlugin({

@@ -75,17 +75,7 @@ injectGlobal`
   }
 `
 
-const useStyles = makeStyles(theme => ({
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(2),
-  },
-  root: {
-    display: 'flex',
-  },
-}))
-
-export class Site extends Component {
+class Site extends Component {
   render() {
     const classes = makeStyles(theme => ({
       content: {
@@ -135,6 +125,6 @@ export class Site extends Component {
   }
 }
 
-const mapStateToProps = state => ({})
+const mapStateToProps = () => ({})
 
 export default withRouter(connect(mapStateToProps)(Site))
